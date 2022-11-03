@@ -1,0 +1,83 @@
+Starting Julia...
+               _
+   _       _ _(_)_     |  Documentation: https://docs.julialang.org
+  (_)     | (_) (_)    |
+   _ _   _| |_  __ _   |  Type "?" for help, "]?" for Pkg help.    
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 1.5.3 (2020-11-09)
+ _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release  
+|__/                   |
+
+julia> Pkg.add("Weave")
+   Updating registry at `D:\Julia\.julia\registries\General`
+  Resolving package versions...
+  Installed YAML ─────── v0.4.4
+  Installed Mustache ─── v1.0.9
+  Installed Highlights ─ v0.4.5
+  Installed Weave ────── v0.10.6
+Updating `D:\Julia\.julia\environments\v1.5\Project.toml`
+  [44d3d7a6] + Weave v0.10.6
+Updating `D:\Julia\.julia\environments\v1.5\Manifest.toml`
+  [eafb193a] + Highlights v0.4.5
+  [ffc61752] + Mustache v1.0.9
+  [44d3d7a6] + Weave v0.10.6
+  [ddb6d928] + YAML v0.4.4
+
+julia>
+
+julia> using Weave
+[ Info: Precompiling Weave [44d3d7a6-8a23-5bf8-98c5-b353f8df5ec9]
+WARNING: Method definition latex(IO, Markdown.LaTeX) in module Markdown at C:\buildbot\worker\package_win64\build\usr\sshare\julia\stdlib\v1.5\Markdown\src\IPython\IPython.jl:28 overwritten in module WeaveMarkdown at D:\Julia\.julia\packgages\Weave\BarbQ\src\WeaveMarkdown\markdown.jl:10.
+  ** incremental compilation may be fatally broken for this module **
+
+
+julia>
+
+julia> Pkg.add("IJulia")
+  Resolving package versions...
+  Installed SoftGlobalScope ─ v1.1.0
+  Installed ZeroMQ_jll ────── v4.3.2+5
+  Installed ZMQ ───────────── v1.2.1
+  Installed IJulia ────────── v1.23.1
+Updating `D:\Julia\.julia\environments\v1.5\Project.toml`
+  [7073ff75] + IJulia v1.23.1
+Updating `D:\Julia\.julia\environments\v1.5\Manifest.toml`
+  [7073ff75] + IJulia v1.23.1
+  [b85f4697] + SoftGlobalScope v1.1.0
+  [c2297ded] + ZMQ v1.2.1
+  [8f1865be] + ZeroMQ_jll v4.3.2+5
+   Building IJulia → `D:\Julia\.julia\packages\IJulia\IDNmS\deps\build.log`
+
+julia> 
+
+julia> using IJulia
+[ Info: Precompiling IJulia [7073ff75-c697-5162-941a-fcdaad2a7d2a]
+
+julia> 
+
+julia> Pkg.add("Pluto")
+  Resolving package versions...
+  Installed Pluto ─── v0.12.17
+  Installed MsgPack ─ v1.1.0
+Updating `D:\Julia\.julia\environments\v1.5\Project.toml`
+  [c3e4b0f8] + Pluto v0.12.17
+Updating `D:\Julia\.julia\environments\v1.5\Manifest.toml`
+  [99f44e22] + MsgPack v1.1.0
+  [c3e4b0f8] + Pluto v0.12.17
+
+julia> 
+
+julia> using Pluto
+[ Info: Precompiling Pluto [c3e4b0f8-55cb-11ea-2926-15256bba5781]
+┌ Info: 
+│ 
+│     Welcome to Pluto v0.12.17 🎈
+│     Start a notebook server using:
+│ 
+│   julia> Pluto.run()
+│ 
+│     Have a look at the FAQ:
+│     https://github.com/fonsp/Pluto.jl/wiki
+└ 
+
+julia> 

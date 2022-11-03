@@ -1,0 +1,11 @@
+*.sh		text eol=lf
+*.command		text eol=lf
+*.bat		text eol=crlf
+*.R		text eol=crlf
+*.jl		text eol=crlf
+*.rb		text eol=crlf
+*.py		text eol=crlf
+*.m		text eol=crlf
+*.c		text eol=crlf
+*.cpp		text eol=crlf
+*.lnk binary

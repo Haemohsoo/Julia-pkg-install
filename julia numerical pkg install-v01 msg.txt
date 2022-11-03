@@ -1,0 +1,238 @@
+julia> Pkg.add("DifferentialEquations")
+   Updating registry at `D:\Julia\.julia\registries\General`
+  Resolving package versions...
+  Installed PrettyPrint ──────────── v0.2.0
+  Installed METIS_jll ────────────── v5.1.0+5
+  Installed ExponentialUtilities ─── v1.8.0
+  Installed Random123 ────────────── v1.2.0
+  Installed BoundaryValueDiffEq ──── v2.5.0
+  Installed ArnoldiMethod ────────── v0.0.4
+  Installed RandomExtensions ─────── v0.4.3
+  Installed DifferentialEquations ── v6.15.0
+  Installed ArrayLayouts ─────────── v0.3.8
+  Installed RecursiveFactorization ─ v0.1.5
+  Installed LoggingExtras ────────── v0.4.2
+  Installed SparseDiffTools ──────── v1.10.2
+  Installed DiffEqBase ───────────── v6.44.3
+  Installed SuiteSparse_jll ──────── v5.4.0+9
+  Installed IfElse ───────────────── v0.1.0
+  Installed Inflate ──────────────── v0.1.2
+  Installed SymbolicUtils ────────── v0.5.2
+  Installed RandomNumbers ────────── v1.4.0
+  Installed SafeTestsets ─────────── v0.0.1
+  Installed FiniteDiff ───────────── v2.7.2
+  Installed VertexSafeGraphs ─────── v0.1.2
+  Installed NameResolution ───────── v0.1.5
+  Installed IterativeSolvers ─────── v0.8.4
+  Installed Hwloc_jll ────────────── v2.2.0+0
+  Installed RecursiveArrayTools ──── v2.7.2
+  Installed ParameterizedFunctions ─ v5.6.0
+  Installed VectorizationBase ────── v0.13.11
+  Installed DelayDiffEq ──────────── v5.24.1
+  Installed StochasticDiffEq ─────── v6.25.0
+  Installed MLStyle ──────────────── v0.4.6
+  Installed Sundials ─────────────── v4.2.6
+  Installed FastClosures ─────────── v0.3.2
+  Installed ProgressMeter ────────── v1.4.0
+  Installed DiffEqPhysics ────────── v3.6.0
+  Installed JuliaVariables ───────── v0.2.3
+  Installed MultiScaleArrays ─────── v1.8.1
+  Installed SLEEFPirates ─────────── v0.6.0
+  Installed ZygoteRules ──────────── v0.2.0
+  Installed ConstructionBase ─────── v1.0.0
+  Installed DiffEqJump ───────────── v6.10.0
+  Installed TerminalLoggers ──────── v0.1.2
+  Installed GeneralizedGenerated ─── v0.2.8
+  Installed ResettableStacks ─────── v1.0.0
+  Installed SteadyStateDiffEq ────── v1.5.1
+  Installed ConsoleProgressMonitor ─ v0.1.2
+  Installed Roots ────────────────── v1.0.7
+  Installed CanonicalTraits ──────── v0.2.3
+  Installed NLsolve ──────────────── v4.4.1
+  Installed AbstractAlgebra ──────── v0.11.2
+  Installed OrdinaryDiffEq ───────── v5.42.3
+  Installed CEnum ────────────────── v0.4.1
+  Installed FunctionWrappers ─────── v1.1.1
+  Installed MuladdMacro ──────────── v0.2.2
+  Installed PoissonRandom ────────── v0.4.0
+  Installed LabelledArrays ───────── v1.4.0
+  Installed DiffEqFinancial ──────── v2.4.0
+  Installed Sundials_jll ─────────── v5.2.0+1
+  Installed ProgressLogging ──────── v0.1.3
+  Installed SimpleTraits ─────────── v0.9.3
+  Installed DiffEqCallbacks ──────── v2.13.5
+  Installed TimerOutputs ─────────── v0.5.7
+  Installed LoopVectorization ────── v0.9.6
+  Installed ModelingToolkit ──────── v3.20.1
+  Installed LightGraphs ──────────── v1.3.3
+  Installed BandedMatrices ───────── v0.15.15
+  Installed ChainRulesCore ───────── v0.9.23
+  Installed Hwloc ────────────────── v1.1.0
+  Installed DimensionalPlotRecipes ─ v1.2.0
+  Installed Combinatorics ────────── v1.0.2
+  Installed DiffEqNoiseProcess ───── v5.5.0
+  Installed Unitful ──────────────── v1.5.0
+  Installed GenericSVD ───────────── v0.3.0
+Updating `D:\Julia\.julia\environments\v1.5\Project.toml`
+  [0c46a032] + DifferentialEquations v6.15.0
+Updating `D:\Julia\.julia\environments\v1.5\Manifest.toml`
+  [c3fe647b] + AbstractAlgebra v0.11.2
+  [ec485272] + ArnoldiMethod v0.0.4
+  [4c555306] + ArrayLayouts v0.3.8
+  [aae01518] + BandedMatrices v0.15.15
+  [764a87c0] + BoundaryValueDiffEq v2.5.0
+  [fa961155] + CEnum v0.4.1
+  [a603d957] + CanonicalTraits v0.2.3
+  [d360d2e6] + ChainRulesCore v0.9.23
+  [861a8166] + Combinatorics v1.0.2
+  [88cd18e8] + ConsoleProgressMonitor v0.1.2
+  [187b0558] + ConstructionBase v1.0.0
+  [bcd4f6db] + DelayDiffEq v5.24.1
+  [2b5f629d] + DiffEqBase v6.44.3
+  [459566f4] + DiffEqCallbacks v2.13.5
+  [5a0ffddc] + DiffEqFinancial v2.4.0
+  [c894b116] + DiffEqJump v6.10.0
+  [77a26b50] + DiffEqNoiseProcess v5.5.0
+  [055956cb] + DiffEqPhysics v3.6.0
+  [0c46a032] + DifferentialEquations v6.15.0
+  [c619ae07] + DimensionalPlotRecipes v1.2.0
+  [d4d017d3] + ExponentialUtilities v1.8.0
+  [9aa1b823] + FastClosures v0.3.2
+  [6a86dc24] + FiniteDiff v2.7.2
+  [59287772] + Formatting v0.4.2
+  [069b7b12] + FunctionWrappers v1.1.1
+  [6b9d7cbe] + GeneralizedGenerated v0.2.8
+  [01680d73] + GenericSVD v0.3.0
+  [0e44f5e4] + Hwloc v1.1.0
+  [e33a78d0] + Hwloc_jll v2.2.0+0
+  [615f187c] + IfElse v0.1.0
+  [d25df0c9] + Inflate v0.1.2
+  [42fd0dbc] + IterativeSolvers v0.8.4
+  [b14d175d] + JuliaVariables v0.2.3
+  [2ee39098] + LabelledArrays v1.4.0
+  [23fbe1c1] + Latexify v0.14.6
+  [093fc24a] + LightGraphs v1.3.3
+  [e6f89c97] + LoggingExtras v0.4.2
+  [bdcacae8] + LoopVectorization v0.9.6
+  [d00139f3] + METIS_jll v5.1.0+5
+  [d8e11817] + MLStyle v0.4.6
+  [961ee093] + ModelingToolkit v3.20.1
+  [46d2c3a1] + MuladdMacro v0.2.2
+  [f9640e96] + MultiScaleArrays v1.8.1
+  [2774e3e8] + NLsolve v4.4.1
+  [71a1bf82] + NameResolution v0.1.5
+  [1dea7af3] + OrdinaryDiffEq v5.42.3
+  [65888b18] + ParameterizedFunctions v5.6.0
+  [e409e4f3] + PoissonRandom v0.4.0
+  [8162dcfd] + PrettyPrint v0.2.0
+  [33c8b6b6] + ProgressLogging v0.1.3
+  [92933f4c] + ProgressMeter v1.4.0
+  [74087812] + Random123 v1.2.0
+  [fb686558] + RandomExtensions v0.4.3
+  [e6cf234a] + RandomNumbers v1.4.0
+  [731186ca] + RecursiveArrayTools v2.7.2
+  [f2c3362d] + RecursiveFactorization v0.1.5
+  [ae5879a3] + ResettableStacks v1.0.0
+  [f2b01f46] + Roots v1.0.7
+  [476501e8] + SLEEFPirates v0.6.0
+  [1bc83da4] + SafeTestsets v0.0.1
+  [699a6c99] + SimpleTraits v0.9.3
+  [47a9eef4] + SparseDiffTools v1.10.2
+  [9672c7b4] + SteadyStateDiffEq v1.5.1
+  [789caeaf] + StochasticDiffEq v6.25.0
+  [bea87d4a] + SuiteSparse_jll v5.4.0+9
+  [c3572dad] + Sundials v4.2.6
+  [fb77eaff] + Sundials_jll v5.2.0+1
+  [d1185830] + SymbolicUtils v0.5.2
+  [5d786b92] + TerminalLoggers v0.1.2
+  [a759f4b9] + TimerOutputs v0.5.7
+  [1986cc42] + Unitful v1.5.0
+  [3d5dd08c] + VectorizationBase v0.13.11
+  [19fa3120] + VertexSafeGraphs v0.1.2
+  [700de1a5] + ZygoteRules v0.2.0
+   Building Random123 → `D:\Julia\.julia\packages\Random123\Y2Du3\deps\build.log`
+
+julia> using DifferentialEquations
+[ Info: Precompiling DifferentialEquations [0c46a032-eb83-5123-abaf-570d42b7fbaa]
+
+julia> Pkg.add("Gen")
+  Resolving package versions...
+  Installed ReverseDiff ─ v1.4.5
+  Installed Gen ───────── v0.3.5
+Updating `D:\Julia\.julia\environments\v1.5\Project.toml`
+  [ea4f424c] + Gen v0.3.5
+Updating `D:\Julia\.julia\environments\v1.5\Manifest.toml`
+  [ea4f424c] + Gen v0.3.5
+  [37e2e3b7] + ReverseDiff v1.4.5
+
+julia> 
+
+julia> using Gen
+[ Info: Precompiling Gen [ea4f424c-a589-11e8-07c0-fd5c91b9da4a]
+WARNING: Method definition special_reverse_exec!(ReverseDiff.SpecialInstruction{typeof(Base.fill), I, O, C} where C where O where I) in module ReverseDiff at D:\Julia\.julia\packages\ReverseDiff\LUA40\src\macros.jl:212 overwritten in module Gen at D:\Julia\.julia\packages\Gen\5JiNL\src\backprop.jl:33.
+  ** incremental compilation may be fatally broken for this module **
+
+WARNING: Method definition special_forward_exec!(ReverseDiff.SpecialInstruction{typeof(Base.fill), I, O, C} where C where O where I) in module ReverseDiff at D:\Julia\.julia\packages\ReverseDiff\LUA40\src\macros.jl:228 overwritten in module Gen at D:\Julia\.julia\packages\Gen\5JiNL\src\backprop.jl:42.
+  ** incremental compilation may be fatally broken for this module **
+
+
+julia> 
+
+julia> Pkg.add("JuMP")
+  Resolving package versions...
+  Installed BenchmarkTools ───── v0.5.0
+  Installed CodecBzip2 ───────── v0.7.2
+  Installed MutableArithmetics ─ v0.2.12
+  Installed JSONSchema ───────── v0.3.3
+  Installed JuMP ─────────────── v0.21.4
+  Installed MathOptInterface ─── v0.9.19
+Updating `D:\Julia\.julia\environments\v1.5\Project.toml`
+  [4076af6c] + JuMP v0.21.4
+Updating `D:\Julia\.julia\environments\v1.5\Manifest.toml`
+  [6e4b80f9] + BenchmarkTools v0.5.0
+  [523fee87] + CodecBzip2 v0.7.2
+  [7d188eb4] + JSONSchema v0.3.3
+  [4076af6c] + JuMP v0.21.4
+  [b8f27783] + MathOptInterface v0.9.19
+  [d8a4904e] + MutableArithmetics v0.2.12
+
+julia> 
+
+julia> using JuMP
+[ Info: Precompiling JuMP [4076af6c-e467-56ae-b986-b466b2749572]
+
+julia> 
+
+julia> Pkg.add("Knet")
+  Resolving package versions...
+  Installed GPUArrays ─── v6.1.2
+  Installed GPUCompiler ─ v0.8.3
+  Installed JLD2 ──────── v0.3.1
+  Installed BFloat16s ─── v0.1.0
+  Installed AutoGrad ──── v1.2.3
+  Installed NNlib ─────── v0.7.6
+  Installed LLVM ──────── v3.5.1
+  Installed Knet ──────── v1.4.4
+  Installed CUDA ──────── v2.2.1
+Updating `D:\Julia\.julia\environments\v1.5\Project.toml`
+  [1902f260] + Knet v1.4.4
+Updating `D:\Julia\.julia\environments\v1.5\Manifest.toml`
+  [6710c13c] + AutoGrad v1.2.3
+  [ab4f0b2a] + BFloat16s v0.1.0
+  [052768ef] + CUDA v2.2.1
+  [0c68f7d7] + GPUArrays v6.1.2
+  [61eb1bfa] + GPUCompiler v0.8.3
+  [033835bb] + JLD2 v0.3.1
+  [1902f260] + Knet v1.4.4
+  [929cbde3] + LLVM v3.5.1
+  [872c559c] + NNlib v0.7.6
+  [6c6a2e73] + Scratch v1.0.3
+
+julia> 
+
+julia> using Knet
+[ Info: Precompiling Knet [1902f260-5fb4-5aff-8c31-6271790ab950]
+
+julia> 
+
+julia> 

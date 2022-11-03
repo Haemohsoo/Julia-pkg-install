@@ -1,0 +1,160 @@
+Starting Julia...
+[ Info: Precompiling Atom [c52e3926-4ff0-5f6e-af25-54175e0327b1]
+               _
+   _       _ _(_)_     |  Documentation: https://docs.julialang.org
+  (_)     | (_) (_)    |
+   _ _   _| |_  __ _   |  Type "?" for help, "]?" for Pkg help.    
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 1.5.3 (2020-11-09)
+ _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release  
+|__/                   |
+
+julia> Pkg.add("DataFrames")
+   Updating registry at `D:\Julia\.julia\registries\General`
+  Resolving package versions...
+  Installed InvertedIndices ─ v1.0.0
+  Installed DataFrames ────── v0.21.8
+  Installed PooledArrays ──── v0.5.3
+Updating `D:\Julia\.julia\environments\v1.5\Project.toml`
+  [a93c6f00] + DataFrames v0.21.8
+Updating `D:\Julia\.julia\environments\v1.5\Manifest.toml`
+  [a93c6f00] + DataFrames v0.21.8
+  [41ab1584] + InvertedIndices v1.0.0
+  [2dfb63ee] + PooledArrays v0.5.3
+
+julia> 
+
+julia> using DataFrames
+[ Info: Precompiling DataFrames [a93c6f00-e57d-5684-b7b6-d8193f3e46c0]
+
+julia> 
+
+julia> Pkg.add("CSV")
+  Resolving package versions...
+  Installed CSV ─ v0.8.2
+Updating `D:\Julia\.julia\environments\v1.5\Project.toml`
+  [336ed68f] + CSV v0.8.2
+Updating `D:\Julia\.julia\environments\v1.5\Manifest.toml`
+  [336ed68f] + CSV v0.8.2
+
+julia> 
+
+julia> using CSV
+[ Info: Precompiling CSV [336ed68f-0bac-5ca0-87d4-7b16caf5d00b]
+
+julia> 
+
+julia> Pkg.add("ExcelFiles")
+  Resolving package versions...
+  Installed TableShowUtils ─── v0.2.5
+  Installed ExcelFiles ─────── v1.0.0
+  Installed ExcelReaders ───── v0.11.0
+  Installed ZipFile ────────── v0.9.3
+  Installed TableTraitsUtils ─ v1.0.1
+  Installed EzXML ──────────── v1.1.0
+  Installed IterableTables ─── v1.0.0
+  Installed XLSX ───────────── v0.7.3
+Updating `D:\Julia\.julia\environments\v1.5\Project.toml`
+  [89b67f3b] + ExcelFiles v1.0.0
+Updating `D:\Julia\.julia\environments\v1.5\Manifest.toml`
+  [89b67f3b] + ExcelFiles v1.0.0
+  [c04bee98] + ExcelReaders v0.11.0
+  [8f5d6c58] + EzXML v1.1.0
+  [1c8ee90f] + IterableTables v1.0.0
+  [5e66a065] + TableShowUtils v0.2.5
+  [382cd787] + TableTraitsUtils v1.0.1
+  [fdbf4ff8] + XLSX v0.7.3
+  [a5390f91] + ZipFile v0.9.3
+
+julia> 
+
+julia> using ExcelFiles
+[ Info: Precompiling ExcelFiles [89b67f3b-d1aa-5f6f-9ca4-282e8d98620d]
+[ Info: Installing xlrd via the Conda xlrd package...
+[ Info: Running `conda install -y xlrd` in root environment
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: D:\Julia\.julia\conda\3
+
+  added / updated specs:
+    - xlrd
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    xlrd-1.2.0                 |             py_0         103 KB
+    ------------------------------------------------------------
+                                           Total:         103 KB
+
+The following NEW packages will be INSTALLED:
+
+  xlrd               pkgs/main/noarch::xlrd-1.2.0-py_0
+
+
+
+Downloading and Extracting Packages
+xlrd-1.2.0           | 103 KB    | ########################################################################### | 100%  
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+
+julia> 
+
+julia> using ExcelFiles
+
+julia> 
+
+julia> Pkg.add("XLSX")
+  Resolving package versions...
+Updating `D:\Julia\.julia\environments\v1.5\Project.toml`
+  [fdbf4ff8] + XLSX v0.7.3
+No Changes to `D:\Julia\.julia\environments\v1.5\Manifest.toml`
+
+julia> 
+
+julia> using XLSX
+
+julia> 
+
+julia> Pkg.add("ExcelReaders")
+  Resolving package versions...
+Updating `D:\Julia\.julia\environments\v1.5\Project.toml`
+  [c04bee98] + ExcelReaders v0.11.0
+No Changes to `D:\Julia\.julia\environments\v1.5\Manifest.toml`
+
+julia> 
+
+julia> using ExcelReaders
+
+julia> 
+
+julia> Pkg.add("RData")
+  Resolving package versions...
+  Installed RData ────────────── v0.7.3
+  Installed Mocking ──────────── v0.7.1
+  Installed CodecZlib ────────── v0.7.0
+  Installed TranscodingStreams ─ v0.9.5
+  Installed ExprTools ────────── v0.1.3
+  Installed TimeZones ────────── v1.5.3
+Updating `D:\Julia\.julia\environments\v1.5\Project.toml`
+  [df47a6cb] + RData v0.7.3
+Updating `D:\Julia\.julia\environments\v1.5\Manifest.toml`
+  [944b1d66] + CodecZlib v0.7.0
+  [e2ba6199] + ExprTools v0.1.3
+  [78c3b35d] + Mocking v0.7.1
+  [df47a6cb] + RData v0.7.3
+  [f269a46b] + TimeZones v1.5.3
+  [3bb67fe8] + TranscodingStreams v0.9.5
+   Building TimeZones → `D:\Julia\.julia\packages\TimeZones\K98G0\deps\build.log`
+
+julia> 
+
+julia> using RData
+[ Info: Precompiling RData [df47a6cb-8c03-5eed-afd8-b6050d6c41da]
+
+julia> 
