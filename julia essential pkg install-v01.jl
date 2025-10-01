@@ -38,5 +38,9 @@ Pkg.add("ProfileSVG")
 using ProfileSVG
 
 
+# https://github.com/JuliaMath/GSL.jl
+# Julia wrapper for the GNU Scientific Library (GSL), for Julia v1.0+. Currently uses GSL v2.7.
+Pkg.add("GSL")
+using GSL
 
 ####################################################
