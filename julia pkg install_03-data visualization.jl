@@ -30,7 +30,7 @@ println("Installing packages for Julia ", VERSION)
 # https://github.com/JuliaPy/PyPlot.jl/issues/278
 
 # https://github.com/JuliaPy/PyCall.jl/issues/730
-install_compatible("Conda")
+# Moved to julia pkg install_05-languages.jl: install_compatible("Conda")
 # Load packages in your project when needed (avoids namespace conflicts): using Conda
 # Disabled automatic environment modification: ENV["PATH"] = Conda.bin_dir(Conda.ROOTENV) * ";" * ENV["PATH"]
 install_compatible("PyPlot")
@@ -60,7 +60,7 @@ install_compatible("Plots")
 install_compatible("StatsPlots")
 # Load packages in your project when needed (avoids namespace conflicts): using StatsPlots
 
-install_compatible("PyCall")
+# Moved to julia pkg install_05-languages.jl: install_compatible("PyCall")
 # already?
 # Disabled automatic environment modification: Pkg.build("PyCall")
 # Load packages in your project when needed (avoids namespace conflicts): using PyCall
@@ -206,7 +206,7 @@ install_compatible("TidierPlots")
 # Additional scientific visualization packages (2026 recommendations)
 # PythonPlot uses PythonCall, while the existing PyPlot uses PyCall.
 # Keep PyPlot/PyCall for backward compatibility.
-install_compatible("PythonCall")
+# Moved to julia pkg install_05-languages.jl: install_compatible("PythonCall")
 install_compatible("PythonPlot")
 
 # Publication-quality scientific figures and vector graphics

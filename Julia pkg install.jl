@@ -9,4 +9,6 @@ include(joinpath(@__DIR__, "julia pkg install_03-data visualization.jl"))
 
 include(joinpath(@__DIR__, "julia pkg install_04-numerical.jl"))
 
+include(joinpath(@__DIR__, "julia pkg install_05-languages.jl"))
+
 include(joinpath(@__DIR__, "julia pkg install_10-etc.jl"))
