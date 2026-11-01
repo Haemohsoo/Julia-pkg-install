@@ -11,7 +11,7 @@ println("Installing packages for Julia ", VERSION)
 # https://juliastats.org/
 # https://github.com/JuliaPlots
 #
-# Julia REPL(Shell)에서는 우 대괄호( ] )를 치면 바로 Package Manager 환경으로 진입
+# In the Julia REPL, press the right square bracket (]) to enter Package Manager mode.
 # https://stackoverflow.com/questions/51800232/error-using-pyplot-in-julia-v1-0-in-windows-10-x64
 #(v1.0) pkg> add LaTeXStrings#master
 # (v1.0) pkg> add PyPlot

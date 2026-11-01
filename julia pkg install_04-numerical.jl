@@ -182,5 +182,37 @@ install_compatible("QuantumToolbox")
 # install_compatible("CUDA")
 # install_compatible("AMDGPU")
 
+
+####################################################
+# Additional numerical packages - enabled
+# OpenBLAS is provided by Julia; MKL is an optional alternative backend.
+# Installing MKL does not activate it automatically.
+
+# BLAS backend
+install_compatible("MKL")
+
+# Matrix and array computation
+install_compatible("StaticArrays")
+install_compatible("BandedMatrices")
+install_compatible("BlockBandedMatrices")
+install_compatible("LinearMaps")
+install_compatible("SparseDiffTools")
+
+# Integration, interpolation and approximation
+install_compatible("Integrals")
+install_compatible("FastGaussQuadrature")
+install_compatible("Interpolations")
+install_compatible("Polynomials")
+install_compatible("ApproxFun")
+
+# Numerical accuracy and uncertainty
+install_compatible("IntervalArithmetic")
+install_compatible("DoubleFloats")
+install_compatible("Measurements")
+
+# Symbolic and physical computing
+install_compatible("Symbolics")
+install_compatible("Unitful")
+
 # Installation summary
 julia_install_report()
